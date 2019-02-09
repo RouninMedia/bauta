@@ -26,6 +26,6 @@ header($ExpStr);
 
 echo 'console.log(\'This is an example of a Javascript file\');'."\n";
 echo 'console.log(\'made even more dynamic using PHP\; in which it is possible\');'."\n";
-echo 'console.log(\'to display '.$Server_Side_Variable.' and run all sorts of tricks.\');'."\n";
+echo 'console.log(\'to display any '.$Server_Side_Variable.' and run all sorts of tricks.\');'."\n";
 
 ?>
