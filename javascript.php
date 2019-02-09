@@ -21,7 +21,7 @@ header($ExpStr);
 
 
   //================//
- // Add JAVASCRIPT //
+ // ADD JAVASCRIPT //
 //================//
 
 echo 'console.log(\'This is an example of a Javascript file\');'."\n";
