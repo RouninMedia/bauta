@@ -24,8 +24,8 @@ header($ExpStr);
  // Add JAVASCRIPT //
 //================//
 
-echo 'console.log(\'This is an example of a\');'."\n";
-echo 'console.log(\'Javascript file powered up using PHP\');'."\n";
-echo 'console.log(\'in which it is possible to display '.$Server_Side_Variable.' and run all sorts of tricks.\');'."\n";
+echo 'console.log(\'This is an example of a Javascript file\');'."\n";
+echo 'console.log(\'made even more dynamic using PHP\; in which it is possible\');'."\n";
+echo 'console.log(\'to display '.$Server_Side_Variable.' and run all sorts of tricks.\');'."\n";
 
 ?>
