@@ -15,7 +15,7 @@ ini_set('display_errors', 1);
 ob_start ("ob_gzhandler");
 header("Content-type: application/javascript; charset: UTF-8");
 header("Cache-Control: must-revalidate");
-$offset = (60 * 60);
+$offset = (60 * 60); // Amendable and optional - see line below
 $ExpStr = "Expires: ".gmdate("D, d M Y H:i:s", time() + $offset)." GMT";
 header($ExpStr);
 
