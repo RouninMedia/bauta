@@ -8,11 +8,17 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 
+  //==================//
+ // GZIP COMPRESSION //
+//==================//
+
+ob_start ("ob_gzhandler");
+
+
   //===============//
  // BUILD HEADERS //
 //===============//
 
-ob_start ("ob_gzhandler");
 header("Content-type: application/javascript; charset: UTF-8");
 header("Cache-Control: must-revalidate");
 $offset = (60 * 60); // Amendable and optional - see line below
