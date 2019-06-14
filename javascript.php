@@ -22,8 +22,8 @@ ob_start ("ob_gzhandler");
 header("Content-type: application/javascript; charset: UTF-8");
 header("Cache-Control: must-revalidate");
 $offset = (60 * 60); // Amendable and optional - see line below
-$ExpStr = "Expires: ".gmdate("D, d M Y H:i:s", time() + $offset)." GMT";
-header($ExpStr);
+$Expires_Header = "Expires: ".gmdate("D, d M Y H:i:s", time() + $offset)." GMT";
+header($Expires_Header);
 
 
   //================//
