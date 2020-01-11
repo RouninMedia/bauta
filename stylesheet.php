@@ -1,23 +1,23 @@
 <?php
 
-  //=================//
+  //*****************//
  // ERROR REPORTING //
-//=================//
+//*****************//
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 
-  //==================//
+  //******************//
  // GZIP COMPRESSION //
-//==================//
+//******************//
 
 ob_start ("ob_gzhandler");
 
 
-  //===============//
+  //***************//
  // BUILD HEADERS //
-//===============//
+//***************//
 
 header("Content-type: text/css; charset: UTF-8");
 header("Cache-Control: must-revalidate");
@@ -26,9 +26,9 @@ $Expires_Header = "Expires: ".gmdate("D, d M Y H:i:s", time() + $offset)." GMT";
 header($Expires_Header);
 
 
-  //=========//
+  //*********//
  // ADD CSS //
-//=========//
+//*********//
 
 echo 'body {display: grid;}'."\n";
 echo 'body {color: rgb(255, 255, 255);}'."\n";
