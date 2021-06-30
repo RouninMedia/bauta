@@ -11,10 +11,12 @@ But **PHP**  can be used to pre-process *any* front-end technology, including:
 
 --- is a simple technique which combines:
 
- - Apache `.htaccess` `mod_rewrite`
- - PHP
+ - Apache `.htaccess` `mod_rewrite` (to rewrite a request for `/my-styles.css` to `/my-styles.php`)
+ - PHP (to dynamically build the output of `/my-styles.php`)
 
-to present dynamic PHP documents as (seemingly) static front-end files (javascript, css, json etc.) with the correct MIME-Type.
+Thus, --- presents dynamic PHP documents as (seemingly) static front-end files (javascript, css, json etc.).
+
+Given that PHP provides headers with the correct MIME-Type and can require the page to be cached for 0 seconds, the apparent static front-end file will be indistinguishable to the consumer from an actual static front-end file.
 
 To reiterate, --- enables the server to deliver what appears to the consumer to be a static file (eg. `.json` or `.css` or `.js`), albeit, under the hood, that apparently static file is actually a dynamically generated PHP file, built by the server on-the-fly just prior to delivery.
 
