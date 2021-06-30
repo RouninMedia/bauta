@@ -1,0 +1,22 @@
+<?php
+
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+
+// PAGEMANIFEST.JSON HEADERS
+ob_start ("ob_gzhandler");
+header("Content-type: application/json; charset: UTF-8");
+header("Cache-Control: must-revalidate");
+$Expires_Header = "Expires: ".gmdate("D, d M Y H:i:s", time())." GMT";
+header($Expires_Header);
+
+// GET PAGE
+$Page = substr($_SERVER['HTTP_REFERER'], strlen('https://'.$_SERVER['HTTP_HOST'].'/'));
+$Page = explode('?', $Page)[0];
+$Page = ($Page === 'index.php') ? '' : str_replace('/index.php', '', $Page);
+$Page = (substr($Page, -1, 1) === '/') ? substr($Page, 0, -1) : $Page;
+
+// GET PAGE MANIFEST
+include $_SERVER['DOCUMENT_ROOT'].'/.assets/content/pages/'.$Page.'/page.json';
+
+?>
