@@ -1,6 +1,6 @@
 # bauta
 
-Across the web, **PHP** is predominantly used for pre-processing `HTML`.
+Across the web, **PHP** is predominantly used for pre-processing **HTML**.
 
 But **PHP**  can be used to pre-process *any* front-end technology, including:
 
